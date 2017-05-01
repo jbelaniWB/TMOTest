@@ -5,8 +5,7 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="testEasy"/>
-          <include name="beforeTest"/>
+          <include name="testSelenium"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>

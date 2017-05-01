@@ -2,23 +2,41 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21795" started-at="2017-03-31T00:05:23Z" finished-at="2017-03-31T00:05:45Z">
+  <suite name="Suite" duration-ms="25422" started-at="2017-05-01T19:56:29Z" finished-at="2017-05-01T19:56:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21795" started-at="2017-03-31T00:05:23Z" finished-at="2017-03-31T00:05:45Z">
+    <test name="Test" duration-ms="25422" started-at="2017-05-01T19:56:29Z" finished-at="2017-05-01T19:56:54Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@4411d970]" name="beforeTest" is-config="true" duration-ms="14194" started-at="2017-03-30T17:05:23Z" finished-at="2017-03-30T17:05:37Z">
+        <test-method status="PASS" signature="verifyCommentInputTest(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTest@4cb2c100]" name="verifyCommentInputTest" duration-ms="24975" started-at="2017-05-01T12:56:29Z" data-provider="hardCodedBrowsers" finished-at="2017-05-01T12:56:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14.14393]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void example.NewTest.verifyCommentInputTest(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@4411d970]" name="testEasy" duration-ms="7219" started-at="2017-03-30T17:05:37Z" finished-at="2017-03-30T17:05:44Z">
+        </test-method> <!-- verifyCommentInputTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTest@4cb2c100]" name="tearDown" is-config="true" duration-ms="128" started-at="2017-05-01T12:56:54Z" finished-at="2017-05-01T12:56:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@4411d970]" name="afterTest" is-config="true" duration-ms="319" started-at="2017-03-30T17:05:44Z" finished-at="2017-03-30T17:05:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- tearDown -->
       </class> <!-- example.NewTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

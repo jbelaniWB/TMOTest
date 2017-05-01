@@ -32,5 +32,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/qamacbookpro/Documents/workspace/sauceLabs/opencsv-2.3.jar"/>
+	<classpathentry kind="lib" path="/Users/qamacbookpro/Documents/workspace/sauceLabs/sauce_java_common-2.1.21.jar"/>
+	<classpathentry kind="lib" path="/Users/qamacbookpro/Documents/workspace/sauceLabs/sauce_junit-2.1.17.jar"/>
+	<classpathentry kind="lib" path="/Users/qamacbookpro/Documents/workspace/sauceLabs/sauce-ondemand-driver-1.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
