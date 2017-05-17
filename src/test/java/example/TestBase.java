@@ -25,7 +25,6 @@ import java.rmi.UnexpectedException;
 /**
 * Simple TestNG test which demonstrates being instantiated via a DataProvider in order to supply multiple browser combinations.
 *
-* @author Neil Manvar
 */
 @Listeners({SauceOnDemandTestListener.class})
 public class TestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider  {
@@ -34,9 +33,9 @@ public class TestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAu
 
  public String buildTag = System.getenv("BUILD_TAG");
 
- public String username = "jbelaniApex82";
+ public String username = "jbelani82";
 
- public String accesskey = "cb9e0c54-1544-4c95-bb09-ce018399bb9f";
+ public String accesskey = "a95c3253-3244-4d42-a3d1-f0254cd40a81";
 
  /**
   * Constructs a {@link SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication
