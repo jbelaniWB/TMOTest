@@ -5,7 +5,8 @@
     <classes>
       <class name="example.NewTest">
         <methods>
-          <include name="testSelenium"/>
+          <include name="RedeemTokenAndRegisterNewAccount" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- example.NewTest -->
     </classes>

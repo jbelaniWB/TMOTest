@@ -1,54 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39310" started-at="2017-05-17T18:40:10Z" finished-at="2017-05-17T18:40:49Z">
+  <suite name="Suite" duration-ms="120930" started-at="2017-05-22T20:27:25Z" finished-at="2017-05-22T20:29:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="39310" started-at="2017-05-17T18:40:10Z" finished-at="2017-05-17T18:40:49Z">
-      <class name="example.NewTestClass">
-        <test-method status="PASS" signature="verifyCommentInputTest_NewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTestClass@4909b8da]" name="verifyCommentInputTest_NewTest" duration-ms="16911" started-at="2017-05-17T11:40:32Z" data-provider="hardCodedBrowsers" finished-at="2017-05-17T11:40:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[MicrosoftEdge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[14.14393]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 10]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[public void example.NewTestClass.verifyCommentInputTest_NewTest(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCommentInputTest_NewTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTestClass@4909b8da]" name="tearDown" is-config="true" duration-ms="107" started-at="2017-05-17T11:40:49Z" finished-at="2017-05-17T11:40:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- example.NewTestClass -->
+    <test name="Test" duration-ms="120930" started-at="2017-05-22T20:27:25Z" finished-at="2017-05-22T20:29:26Z">
       <class name="example.NewTest">
-        <test-method status="PASS" signature="verifyCommentInputTest(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTest@6fb554cc]" name="verifyCommentInputTest" duration-ms="20821" started-at="2017-05-17T11:40:10Z" data-provider="hardCodedBrowsers" finished-at="2017-05-17T11:40:31Z">
+        <test-method status="PASS" signature="RedeemTokenAndRegisterNewAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTest@5d624da6]" name="RedeemTokenAndRegisterNewAccount" duration-ms="120517" started-at="2017-05-22T13:27:25Z" data-provider="hardCodedBrowsers" finished-at="2017-05-22T13:29:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[14.14393]]>
+                <![CDATA[49.0]]>
               </value>
             </param>
             <param index="2">
@@ -58,14 +26,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[public void example.NewTest.verifyCommentInputTest(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException,org.openqa.selenium.InvalidElementStateException,java.rmi.UnexpectedException]]>
+                <![CDATA[public void example.NewTest.RedeemTokenAndRegisterNewAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCommentInputTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTest@6fb554cc]" name="tearDown" is-config="true" duration-ms="141" started-at="2017-05-17T11:40:32Z" finished-at="2017-05-17T11:40:32Z">
+        </test-method> <!-- RedeemTokenAndRegisterNewAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTest@5d624da6]" name="tearDown" is-config="true" duration-ms="193" started-at="2017-05-22T13:29:25Z" finished-at="2017-05-22T13:29:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
