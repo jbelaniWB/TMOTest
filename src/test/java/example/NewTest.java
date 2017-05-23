@@ -62,6 +62,8 @@ public class NewTest extends TestBase{
         
         // Reset Redemption Token
         //redeempage.resetToken(token);
+        //fvhomepage.getElement(Fvhomepage.Fvhomepgelements.region).click();
+        Thread.sleep(2000);
         fvhomepage.getElement(Fvhomepage.Fvhomepgelements.redeem).click();
 		CommonRepository.waitforPageLoad(driver);
 		fvhomepage.getElement(Fvhomepage.Fvhomepgelements.searchtextbox).sendKeys(titleName);

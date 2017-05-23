@@ -35,7 +35,7 @@ public class Fvhomepage {
 	public enum Fvhomepgelements {	
 		searchresult,enterredeemcode,redeemcontinue,filterdrpdown,sortbydrpdown,termsofservice,privacypolicy,
 		coprights,countryseldropdown,fvlogo,redeem,mycollection,signup,fvlogin,help,searchtextbox,searchbtn, 
-		clickhere, errconsumedtoken, errorinvalidtoken,erroranotherregiontoken;
+		clickhere, errconsumedtoken, errorinvalidtoken,erroranotherregiontoken, region;
 	}
 	
 	public void visitPage() {
@@ -70,6 +70,9 @@ public class Fvhomepage {
 	{
 		switch (webelement) 
 		{
+		case region:
+			common=driver.findElement(By.linkText("United States"));
+			break;
 		case fvlogo:
 			common=driver.findElement(By.xpath(".//*[@id='fb-root']/header/div/ul[1]/li[2]/a"));
 			//common=driver.findElement(By.xpath("html/body/header/div/ul[1]/li[3]/a"));
