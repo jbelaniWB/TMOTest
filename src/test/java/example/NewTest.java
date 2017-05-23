@@ -2,12 +2,12 @@ package example;
 
 import org.testng.annotations.Test;
 
-import Pages.GuineaPigPage;
-import Pages.CommonRepository;
-import Pages.FVsignuppage;
-import Pages.Redeempage;
-import Pages.FVsignuppage.Fvsignuppgelements;
-import Pages.Fvhomepage;
+import pages.CommonRepository;
+import pages.FVsignuppage;
+import pages.Fvhomepage;
+import pages.GuineaPigPage;
+import pages.Redeempage;
+import pages.FVsignuppage.Fvsignuppgelements;
 
 import org.testng.Assert;
 

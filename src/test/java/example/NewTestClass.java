@@ -9,7 +9,7 @@ import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import Pages.GuineaPigPage;
+import pages.GuineaPigPage;
 
 public class NewTestClass extends TestBase{
 	@org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")

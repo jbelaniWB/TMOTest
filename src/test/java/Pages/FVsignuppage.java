@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import static org.junit.Assert.assertFalse;
 import org.openqa.selenium.By;
