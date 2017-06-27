@@ -5,27 +5,12 @@ import org.testng.annotations.Test;
 import pages.CommonRepository;
 import pages.FVsignuppage;
 import pages.Fvhomepage;
-import pages.GuineaPigPage;
 import pages.Redeempage;
 import pages.FVsignuppage.Fvsignuppgelements;
 
-import org.testng.Assert;
-
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
-import java.rmi.UnexpectedException;
-import java.util.UUID;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterTest;
 
 public class NewTest extends TestBase{
 	FVsignuppage fvsignuppage;
@@ -63,6 +48,7 @@ public class NewTest extends TestBase{
         // Reset Redemption Token
         //redeempage.resetToken(token);
         //fvhomepage.getElement(Fvhomepage.Fvhomepgelements.region).click();
+        
         Thread.sleep(2000);
         fvhomepage.getElement(Fvhomepage.Fvhomepgelements.redeem).click();
 		CommonRepository.waitforPageLoad(driver);
@@ -104,5 +90,7 @@ public class NewTest extends TestBase{
 		Thread.sleep(4000);
 		redeempage.validateTitleRedemption();
 		redeempage.validateRegistratrionredemption();
+		
 	}
+	
 }

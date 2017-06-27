@@ -24,27 +24,27 @@ public class Automation{
 //		Assert.assertTrue(title.contains("Demo Guru99 Page")); 		
 //	}
 
-private WebDriver driver;		
-@Test				
-public void testEasy() {	
-	driver.get("http://demo.guru99.com/selenium/guru99home/");  
-	String title = driver.getTitle();				 
-	Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
-	System.out.println("Aumation class");
-}	
-@BeforeTest
-public void beforeTest() {	
-	System.setProperty("webdriver.chrome.driver", "chromedriver");
-    driver = new ChromeDriver();
-//	try {
-//		driver = new RemoteWebDriver(new java.net.URL("http://127.0.0.1:7055"), DesiredCapabilities.chrome());
-//	} catch (MalformedURLException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
-}		
-@AfterTest
-public void afterTest() {
-	driver.quit();			
-}
+//private WebDriver driver;		
+//@Test				
+//public void testEasy() {	
+//	driver.get("http://demo.guru99.com/selenium/guru99home/");  
+//	String title = driver.getTitle();				 
+//	Assert.assertTrue(title.contains("Demo Guru99 Page")); 	
+//	System.out.println("Aumation class");
+//}	
+//@BeforeTest
+//public void beforeTest() {	
+//	System.setProperty("webdriver.chrome.driver", "chromedriver");
+//    driver = new ChromeDriver();
+////	try {
+////		driver = new RemoteWebDriver(new java.net.URL("http://127.0.0.1:7055"), DesiredCapabilities.chrome());
+////	} catch (MalformedURLException e) {
+////		// TODO Auto-generated catch block
+////		e.printStackTrace();
+////	}
+//}		
+//@AfterTest
+//public void afterTest() {
+//	driver.quit();			
+//}
 }

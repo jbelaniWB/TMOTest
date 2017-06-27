@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="78851" started-at="2017-05-23T18:34:58Z" finished-at="2017-05-23T18:36:17Z">
+  <suite name="Suite" duration-ms="53310" started-at="2017-06-27T00:54:17Z" finished-at="2017-06-27T00:55:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78851" started-at="2017-05-23T18:34:58Z" finished-at="2017-05-23T18:36:17Z">
+    <test name="TestListenerAdapter2" duration-ms="53310" started-at="2017-06-27T00:54:17Z" finished-at="2017-06-27T00:55:10Z">
       <class name="example.NewTest">
-        <test-method status="FAIL" signature="RedeemTokenAndRegisterNewAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTest@5d624da6]" name="RedeemTokenAndRegisterNewAccount" duration-ms="78019" started-at="2017-05-23T11:34:58Z" data-provider="hardCodedBrowsers" finished-at="2017-05-23T11:36:16Z">
+        <test-method status="FAIL" signature="RedeemTokenAndRegisterNewAccount(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:example.NewTest@68837a77]" name="RedeemTokenAndRegisterNewAccount" duration-ms="52769" started-at="2017-06-26T17:54:17Z" data-provider="hardCodedBrowsers" finished-at="2017-06-26T17:55:09Z">
           <params>
             <param index="0">
               <value>
@@ -33,40 +33,40 @@
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: Click here (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.38.128', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.44.91', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2696, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAFaUt0qIUd2BCAcAA...}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX942364a3
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2104, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAMEG20qIUd2BCAcAA...}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXf0897c4e
 *** Element info: {Using=link text, value=Click here}
-Command duration or timeout: 109 milliseconds
+Command duration or timeout: 137 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.181', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
+System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.155', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, platform=XP, specificationLevel=0, acceptSslCerts=false, processId=2696, platformVersion=10.0, browserVersion=49.0, takesScreenshot=true, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, rotatable=false, hasMetadata=true, version=49.0, proxy={}, command_id=1, webdriver.remote.sessionid=b2069b2682204d3d96b93f8d499a5971, takesElementScreenshot=true, device=desktop, cssSelectorsEnabled=true, firefox_profile=UEsDBBQAAAAIAFaUt0qIUd2BCAcAA...}]
-Session ID: b2069b2682204d3d96b93f8d499a5971
+Capabilities [{raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, platform=XP, specificationLevel=0, acceptSslCerts=false, processId=2104, platformVersion=10.0, browserVersion=49.0, takesScreenshot=true, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, rotatable=false, hasMetadata=true, version=49.0, proxy={}, command_id=1, webdriver.remote.sessionid=a0b309e5e2494191b92b181b37277e0e, takesElementScreenshot=true, device=desktop, cssSelectorsEnabled=true, firefox_profile=UEsDBBQAAAAIAMEG20qIUd2BCAcAA...}]
+Session ID: a0b309e5e2494191b92b181b37277e0e
 *** Element info: {Using=link text, value=Click here}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Click here (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.38.128', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.44.91', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2696, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAFaUt0qIUd2BCAcAA...}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX942364a3
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2104, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAMEG20qIUd2BCAcAA...}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXf0897c4e
 *** Element info: {Using=link text, value=Click here}
-Command duration or timeout: 109 milliseconds
+Command duration or timeout: 137 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.181', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
+System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.155', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, platform=XP, specificationLevel=0, acceptSslCerts=false, processId=2696, platformVersion=10.0, browserVersion=49.0, takesScreenshot=true, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, rotatable=false, hasMetadata=true, version=49.0, proxy={}, command_id=1, webdriver.remote.sessionid=b2069b2682204d3d96b93f8d499a5971, takesElementScreenshot=true, device=desktop, cssSelectorsEnabled=true, firefox_profile=UEsDBBQAAAAIAFaUt0qIUd2BCAcAA...}]
-Session ID: b2069b2682204d3d96b93f8d499a5971
+Capabilities [{raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, platform=XP, specificationLevel=0, acceptSslCerts=false, processId=2104, platformVersion=10.0, browserVersion=49.0, takesScreenshot=true, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, rotatable=false, hasMetadata=true, version=49.0, proxy={}, command_id=1, webdriver.remote.sessionid=a0b309e5e2494191b92b181b37277e0e, takesElementScreenshot=true, device=desktop, cssSelectorsEnabled=true, firefox_profile=UEsDBBQAAAAIAMEG20qIUd2BCAcAA...}]
+Session ID: a0b309e5e2494191b92b181b37277e0e
 *** Element info: {Using=link text, value=Click here}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -80,7 +80,7 @@ Session ID: b2069b2682204d3d96b93f8d499a5971
 	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at pages.FVsignuppage.getElement(FVsignuppage.java:76)
-	at example.NewTest.RedeemTokenAndRegisterNewAccount(NewTest.java:85)
+	at example.NewTest.RedeemTokenAndRegisterNewAccount(NewTest.java:71)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,17 +97,17 @@ Session ID: b2069b2682204d3d96b93f8d499a5971
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: Click here (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+Command duration or timeout: 16 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
-System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.38.128', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
+System info: host: 'WIN-SB3ER6JQ6ME', ip: '172.20.44.91', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2696, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAFaUt0qIUd2BCAcAA...}]
-Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXX942364a3
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, webdriver.remote.quietExceptions=true, appBuildId=20160916101415, version=49.0, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2104, browserVersion=49.0, platformVersion=10.0, XULappId={XXXXXXXX-XXXX-XXXX-XXXX-XXXXa9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop, firefox_profile=UEsDBBQAAAAIAMEG20qIUd2BCAcAA...}]
+Session ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXf0897c4e
 *** Element info: {Using=link text, value=Click here}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.181', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
+System info: host: 'QAMacbookPros-MacBook-Pro.local', ip: '10.146.59.155', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.6', java.version: '1.8.0_51'
 Driver info: driver.version: EventFiringWebDriver
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -140,11 +140,11 @@ Driver info: driver.version: EventFiringWebDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RedeemTokenAndRegisterNewAccount -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTest@5d624da6]" name="tearDown" is-config="true" duration-ms="148" started-at="2017-05-23T11:36:17Z" finished-at="2017-05-23T11:36:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:example.NewTest@68837a77]" name="tearDown" is-config="true" duration-ms="169" started-at="2017-06-26T17:55:10Z" finished-at="2017-06-26T17:55:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- example.NewTest -->
-    </test> <!-- Test -->
+    </test> <!-- TestListenerAdapter2 -->
   </suite> <!-- Suite -->
 </testng-results>
