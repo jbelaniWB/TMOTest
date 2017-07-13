@@ -206,4 +206,10 @@ public class ReportListener implements IReporter {
 		IOUtils.copy(fis, response, encoding);
 		System.out.println(response.toString());
 	}
+	
+	public void getSauceLabsJobDetails(String jobId) throws Exception{
+		//https://jbelaniWB:8c0ad879-a2ae-416c-850e-8d14d186a13d@saucelabs.com/rest/v1/users/jobs/2e60efae941644b5b5262b9fd9f9a3c9
+		
+		
+	}
 }
