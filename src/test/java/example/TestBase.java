@@ -33,9 +33,9 @@ public class TestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAu
 
  public String buildTag = System.getenv("BUILD_TAG");
 
- public String username = "jbelani82";
+ public String username = "jbelaniWB";//"jbelani82";
 
- public String accesskey = "a95c3253-3244-4d42-a3d1-f0254cd40a81";
+ public String accesskey = "8c0ad879-a2ae-416c-850e-8d14d186a13d";//"a95c3253-3244-4d42-a3d1-f0254cd40a81";
 
  /**
   * Constructs a {@link SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication
@@ -128,6 +128,7 @@ public class TestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAu
      // set current sessionId
      String id = ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
      sessionId.set(id);
+     System.out.println("SessionId: " + id);
  }
 
  /**

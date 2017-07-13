@@ -93,4 +93,14 @@ public class NewTest extends TestBase{
 		
 	}
 	
+	@org.testng.annotations.Test(dataProvider = "hardCodedBrowsers")
+	public void RegisterNewAccount(String browser, String version, String os, Method method)
+            throws Exception {
+		this.createDriver(browser, version, os, method.getName());
+        WebDriver driver = this.getWebDriver();
+        fvsignuppage = new FVsignuppage(driver);
+        redeempage = new Redeempage(driver);
+        commonRepository = new CommonRepository();
+        fvhomepage = new Fvhomepage(driver);
+	}
 }

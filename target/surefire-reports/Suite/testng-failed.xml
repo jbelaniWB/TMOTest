@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Suite]">
-  <test name="TestListenerAdapter2(failed)">
+  <listeners>
+    <listener class-name="example.ExecutionListener"/>
+    <listener class-name="example.ReportListener"/>
+  </listeners>
+  <test name="NewFV - ExistingUV Redemption Flow(failed)">
     <classes>
       <class name="example.NewTest">
         <methods>
@@ -10,5 +14,5 @@
         </methods>
       </class> <!-- example.NewTest -->
     </classes>
-  </test> <!-- TestListenerAdapter2(failed) -->
+  </test> <!-- NewFV - ExistingUV Redemption Flow(failed) -->
 </suite> <!-- Failed suite [Suite] -->
