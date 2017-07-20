@@ -33,9 +33,9 @@ public class TestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAu
 
  public String buildTag = System.getenv("BUILD_TAG");
 
- public String username = "jbelaniWB";//"jbelani82";
+ public String username = "flixstervideo";
 
- public String accesskey = "8c0ad879-a2ae-416c-850e-8d14d186a13d";//"a95c3253-3244-4d42-a3d1-f0254cd40a81";
+ public String accesskey = "4bff95a5-6938-405d-a3ae-856dc7e86da0";
 
  /**
   * Constructs a {@link SauceOnDemandAuthentication} instance using the supplied user name/access key.  To use the authentication

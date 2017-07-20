@@ -1,12 +1,19 @@
 package example;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
@@ -18,6 +25,7 @@ import java.util.TimeZone;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.commons.io.IOUtils;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.IReporter;
@@ -31,6 +39,11 @@ import org.testng.xml.XmlSuite;
 
 public class ReportListener implements IReporter {
 
+	public String username = "flixstervideo";
+
+	 public String accesskey = "4bff95a5-6938-405d-a3ae-856dc7e86da0";
+	 private  final int BUFFER_SIZE = 4096;
+	 
 	@Override
 
 	public void generateReport(List<XmlSuite> arg0, List<ISuite> arg1,
@@ -209,7 +222,149 @@ public class ReportListener implements IReporter {
 	
 	public void getSauceLabsJobDetails(String jobId) throws Exception{
 		//https://jbelaniWB:8c0ad879-a2ae-416c-850e-8d14d186a13d@saucelabs.com/rest/v1/users/jobs/2e60efae941644b5b5262b9fd9f9a3c9
+		String url = "https://flixstervideo:4bff95a5-6938-405d-a3ae-856dc7e86da0@saucelabs.com/rest/v1/users/jobs/" + jobId;
+
+		URL obj = new URL(url);
+		HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
+
+	    con.setRequestProperty("Content-Type", "application/json");
+	    con.setDoOutput(true);
+
+	 // optional default is GET
+	 		con.setRequestMethod("GET");
+
+	    String userpass = "flixstervideo" + ":" + "4bff95a5-6938-405d-a3ae-856dc7e86da0";
+	    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+	    con.setRequestProperty ("Authorization", basicAuth);
+
 		
+
+		//add request header
+		//con.setRequestProperty("User-Agent", USER_AGENT);
+		con.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+		con.setRequestProperty("Accept", "application/json");
+
+		int responseCode = con.getResponseCode();
+		System.out.println("\nSending 'GET' request to URL : " + url);
+		System.out.println("Response Code : " + responseCode);
+
+		BufferedReader in = new BufferedReader(
+		        new InputStreamReader(con.getInputStream()));
+		String inputLine;
+		StringBuffer response = new StringBuffer();
+
+		while ((inputLine = in.readLine()) != null) {
+			response.append(inputLine);
+		}
+		in.close();
+
+		//print result
+		System.out.println(response.toString());
+//    	System.out.println("Test");
 		
 	}
+	
+	public void getSauceLabsJobAssets(String jobId) throws Exception{
+		String url = "https://flixstervideo:4bff95a5-6938-405d-a3ae-856dc7e86da0@saucelabs.com/rest/v1/users/jobs/" + jobId + "/assets";
+
+		URL obj = new URL(url);
+		HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
+
+	    con.setRequestProperty("Content-Type", "application/json");
+	    con.setDoOutput(true);
+
+	 // optional default is GET
+	 		con.setRequestMethod("GET");
+
+	    String userpass = "flixstervideo" + ":" + "4bff95a5-6938-405d-a3ae-856dc7e86da0";
+	    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+	    con.setRequestProperty ("Authorization", basicAuth);
+
+		
+
+		//add request header
+		//con.setRequestProperty("User-Agent", USER_AGENT);
+		con.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+		con.setRequestProperty("Accept", "application/json");
+
+		int responseCode = con.getResponseCode();
+		System.out.println("\nSending 'GET' request to URL : " + url);
+		System.out.println("Response Code : " + responseCode);
+
+		BufferedReader in = new BufferedReader(
+		        new InputStreamReader(con.getInputStream()));
+		String inputLine;
+		StringBuffer response = new StringBuffer();
+
+		while ((inputLine = in.readLine()) != null) {
+			response.append(inputLine);
+		}
+		in.close();
+
+		//print result
+		System.out.println(response.toString());
+		JSONObject jsonData = new JSONObject(response.toString());
+		//String uploadUrl = test.getString("screenshots");
+		JSONArray screenshotsArray = jsonData.getJSONArray("screenshots");
+		Path path = Paths.get("downloads" + File.separator + "test/");
+        Files.createDirectories( path);
+        System.out.println("Path: " + path.toString());
+	}
+	
+	public  void downloadFile(String fileURL, String saveDir)
+            throws IOException {
+        URL url = new URL(fileURL);
+        HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+        String userpass = username + ":" + accesskey;
+	    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+	    httpConn.setRequestProperty ("Authorization", basicAuth);
+        int responseCode = httpConn.getResponseCode();
+ 
+        // always check HTTP response code first
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            String fileName = "";
+            String disposition = httpConn.getHeaderField("Content-Disposition");
+            String contentType = httpConn.getContentType();
+            int contentLength = httpConn.getContentLength();
+ 
+            if (disposition != null) {
+                // extracts file name from header field
+                int index = disposition.indexOf("filename=");
+                if (index > 0) {
+                    fileName = disposition.substring(index + 10,
+                            disposition.length() - 1);
+                }
+            } else {
+                // extracts file name from URL
+                fileName = fileURL.substring(fileURL.lastIndexOf("/") + 1,
+                        fileURL.length());
+            }
+ 
+            System.out.println("Content-Type = " + contentType);
+            System.out.println("Content-Disposition = " + disposition);
+            System.out.println("Content-Length = " + contentLength);
+            System.out.println("fileName = " + fileName);
+ 
+            // opens input stream from the HTTP connection
+            InputStream inputStream = httpConn.getInputStream();
+            String saveFilePath = saveDir + File.separator + fileName;
+             
+            // opens an output stream to save into file
+            FileOutputStream outputStream = new FileOutputStream(saveFilePath);
+ 
+            int bytesRead = -1;
+            byte[] buffer = new byte[BUFFER_SIZE];
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
+            }
+ 
+            outputStream.close();
+            inputStream.close();
+ 
+            System.out.println("File downloaded");
+        } else {
+            System.out.println("No file to download. Server replied HTTP code: " + responseCode);
+        }
+        httpConn.disconnect();
+    }
 }
