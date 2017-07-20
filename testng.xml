@@ -4,6 +4,7 @@
 <listeners>
 	<listener class-name="example.ExecutionListener"></listener>
 	<listener class-name="example.ReportListener" />
+	<listener class-name="example.SauceOnDemandTestListener"/>
 </listeners>
   <test name="NewFV - ExistingUV Redemption Flow" preserve-order="true">
     <classes>
